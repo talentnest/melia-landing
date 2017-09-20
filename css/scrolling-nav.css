@@ -5,10 +5,13 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 body {
     width: 100%;
     height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 html {
@@ -17,36 +20,44 @@ html {
 }
 
 .navbar {
-    background-color: rgb(0, 161, 233);
-    border-color: rgb(0, 161, 233);
-    color: #FFF;
+    background-color: #E5DCD3;
+    border-color: #E5DCD3;
+    color: #8B664C;
+}
+
+.main-logo {
+    width: 72%;
+}
+
+.nav {
+    margin-top: 10px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #FFF;
+    color: #8B664C;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
-    color: rgb(0, 161, 233);
-    background-color: #FFF;
+    color: #FFF;
+    background-color: #8B664C;
     border-radius: 3px;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #FFF;
+    border-color: #8B664C;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
+    background-color: #8B664C;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    color: rgb(0, 161, 233);
-    background-color: #FFF;
+    color: #E5DCD3;
+    background-color: #8B664C;
 }
 
 .navbar-default .navbar-toggle:hover > .icon-bar {
-    background-color: rgb(0, 161, 233);
+    background-color: #E5DCD3;
 }
 
 @media(min-width:767px) {
@@ -63,21 +74,22 @@ html {
 }
 
 .welcome-container {
-    color: rgba(231,231,231,0.2);;
+    color: rgba(231,231,231,0.2);
     padding-bottom: 20px;
     text-align: left;
 }
 
-.welcome-title, .brands-title, .locations-title {
-    line-height: 6rem;
+.locations-title {
     padding-left: 20px;
-    padding-top: 50px;
-    margin: 0;
     text-align: left;
 }
 
 .welcome-body {
     color: #515151;
+    background: rgba(0,0,0,0.65);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .transparent-container {
@@ -87,12 +99,12 @@ html {
 }
 
 .btn-title {
-    font-size: 2.5rem;
-    color: rgb(0, 161, 233);
+    font-size: 2rem;
+    color: #EDE6E0;
 }
 
 .btn-subtitle {
-    color: #515151;
+    color: #c1c1c1;
 }
 
 .text-grey {
@@ -101,7 +113,7 @@ html {
 
 
 .section-btn {
-    color: rgb(0, 161, 233);
+    color: #E5DCD3;
     background-color: transparent;
     border: none;
     padding-top: 20px;
@@ -113,26 +125,26 @@ html {
 }
 
 .locations-icon {
-    font-size: 3.5rem;
-    line-height: 3.8rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
 }
 
 .brands-icon {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-family: Lato, sans-serif;
     font-weight: 300;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
 }
 
 .circle {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 7px;
-    background-color: rgb(0, 161, 233);
-    color: #FFF;
-    border-radius: 80px;
-    padding: 20px;
+    background-color: #EDE6E0;
+    color: #000;
+    border-radius: 60px;
+    padding: 18px;
 }
 
 .section-btn-label {
@@ -141,8 +153,8 @@ html {
 }
 
 /* Sections - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and
+padding of sections and children of those sections to manage the look and feel of the site. */
 
 .welcome-section {
     height: auto;
@@ -150,6 +162,8 @@ of those sections to manage the look and feel of the site. */
     padding-top: 70px;
     text-align: justify;
     color: #515151;
+    background: url(../images/backgrounds/welcome-bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .brands-section {
@@ -159,136 +173,179 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #EEE;
     color: #515151;
+    background: url(../images/backgrounds/brands-bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .locations-section {
     height: auto;
     min-height: 100%;
-    padding-top: 0;
+    padding-top: 50px;
     text-align: center;
     background: #FFF;
     color: #515151;
-}
-
-.welcome-image {
-    background: url(../images/backgrounds/welcome-bg.jpg) no-repeat center center;
-    background-size: cover;
-    color: #FFF;
-}
-
-.brands-image {
-    background: url(../images/backgrounds/brands-bg.jpg) no-repeat center center;
-    background-size: cover;
-    color: #FFF;
-    height: 450px;
-}
-
-.locations-image {
     background: url(../images/backgrounds/locations-bg.jpg) no-repeat center center;
     background-size: cover;
-    color: #FFF;
-    height: 450px;
 }
 
-.welcome-text {
-    margin: 30px 0;
-    background-color: #00000080;
-    color: #FFF;
-    padding: 20px;
+.footer-section {
+    background-color: #5c4433;
+    color: #E5DCD3;
+    text-align: justify;
+    padding: 50px;
+}
+
+.welcome-video {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    position: relative;
+    padding-bottom: 45%; /* 16:9 */
+}
+
+.welcome-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.locations-map {
+    color: #8B664C;
+    height: 100%;
+    width: 60%;
+    text-align: left;
+    float: left;
+}
+
+.pin-group {
+    fill: #000;
+    transition: .2s fill;
+    stroke-width: 4px;
+    stroke: transparent;
+}
+
+.countries,
+.country {
+    fill: #D0C1B6;
+}
+
+.pin-group-colombia:hover,
+.pin-group-peru:hover,
+.pin-group-puerto-rico:hover,
+.pin-group-usa:hover,
+.pin-group-dominican:hover,
+.pin-group-mexico:hover,
+.pin-group-panama:hover,
+.pin-group-jamaica:hover,
+.pin-group-cuba:hover,
+.pin-group-bahamas:hover,
+.pin-group-argentina:hover,
+.pin-group-venezuela:hover {
+    fill: #a10001;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.active-pin {
+    fill: #a13a3a;
+}
+
+.brands-text {
+    float: left;
+    width: 30%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.brands-text-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-color {
+    width: 80%;
+}
+
+.brands-container {
+    background-color: rgba(233,233,233,0.8);
+    padding-top: 60px;
+}
+
+.brands-video {
+    background-color: #FFF;
+    float: right;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 39.3%; /* 16:9 */
+}
+
+.brands-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .brands-title {
-    text-align: left;
-    line-height: 6rem;
-    padding-left: 20px;
-    color: #FFF;
-    margin: 0;
-}
-
-.brands-desc {
-    text-align: left;
-    padding: 20px;
-    margin-bottom: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #FFF;
-}
-
-.brands-logos {
-    background-color: #FFF;
-    margin: 0;
+    line-height: 4.8rem;
+    padding: 0 15px;
+    font-size: 3rem;
 }
 
 .brand-logo {
-    margin: 10px;
     display: inline-block;
 }
 
-.gran-melia-logo {
-    background: url(../images/brands/gran-melia-logo.png);
-    background-size: cover;
-    width: 197px;
-    height: 60px;
+.brand-logo img {
+    width: 70%;
+    vertical-align: inherit;
 }
 
-.melia-logo {
-    background: url(../images/brands/melia-logo.png);
-    background-size: cover;
-    width: 124px;
-    height: 65px;
+.brands-container .nav li a {
+    padding: 0;
 }
 
-.me-logo {
-    background: url(../images/brands/me-logo.png);
-    background-size: cover;
-    width: 101px;
-    height: 65px;
+.nav-tabs a {
+    color: #555;
 }
 
-.innside-logo {
-    background: url(../images/brands/innside-logo.png);
-    background-size: cover;
-    width: 144px;
-    height: 50px;
+.nav-tabs > li.active > a {
+    background-color: #D5E3E5;
+    border-color: #9DB8C1;
 }
 
-.paradisus-logo {
-    background: url(../images/brands/paradisus-logo.png);
-    background-size: cover;
-    width: 135px;
-    height: 75px;
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: #D5E3E5;
+    border-color: #9DB8C1 #9DB8C1 #9DB8C1;
 }
 
-.nav-pills > li {
-    float: none;
-    display: inline-block;
+.nav-tabs {
+    border-bottom-color: #9DB8C1;
 }
 
-.nav-pills > li > a {
-    border: 1px solid #FFF;
-    border-radius: 0;
+.nav-tabs > li > a:hover {
+    border-color: #9DB8C1 #9DB8C1 #9DB8C1;
 }
 
-.brands-section .nav-pills > li.active > a, .brands-section .nav-pills > li.active > a:focus, .brands-section .nav-pills > li.active > a:hover {
-    background-color: inherit;
-    border: 1px solid #BBB;
-    border-radius: 3px;
-    box-shadow: 0 4px 2px #D5D4D6;
-}
-
-.nav > li > a:focus, .nav > li > a:hover {
-    background-color: inherit;
-}
-
-.brands-section .nav > li > a:focus, .brands-section .nav > li > a:hover {
-    background-color: inherit;
-    box-shadow: 0 4px 2px #D5D4D6;
-    border: 1px solid #BBB;
+.nav > li > a:focus {
+    border-color: #9DB8C1 #9DB8C1 #9DB8C1;
 }
 
 .tab-content {
     text-align: left;
-    padding: 5px 40px 40px;
-    background-color: #FFF;
+    padding: 5px;
+    margin-top: 15px;
 }
 
 .brands-link-list {
@@ -300,12 +357,29 @@ of those sections to manage the look and feel of the site. */
     text-align: left;
 }
 
+.locations-regions {
+    float: right;
+    width: 40%;
+    padding: 20px;
+    padding-top: 120px;
+
+}
+
+.locations-tab {
+    display: none;
+    float: left;
+    text-align: left;
+}
+
+.locations-tab h4 {
+    color: #9e9e9e;
+}
+
 .locations-desc {
     text-align: left;
-    padding: 20px;
-    margin-bottom: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #FFF;
+    padding-left: 25px;
+    margin-top: -10px;
+    color: #9e9e9e;
 }
 
 .location-region-title {
@@ -317,9 +391,21 @@ of those sections to manage the look and feel of the site. */
 
 .location-region-subtitle {
     margin-top: 5px;
-    background-color: rgba(0, 161, 233, 0.1);
+    background-color: #E5DCD3;
     padding: 5px;
     border-radius: 3px;
+}
+
+.location-region-subtitle a {
+    color: #8B664C;
+}
+
+.locations-tab-title {
+    line-height: 4rem;
+}
+
+.pin-text {
+    font-size: 7px;
 }
 
 @media(max-width:767px) {
@@ -335,9 +421,8 @@ of those sections to manage the look and feel of the site. */
         margin-top: 0;
     }
 
-    .welcome-title {
-        line-height: 5rem;
-        font-size: 3rem;
+    .welcome-video {
+        margin-top: 0;
     }
 
     .circle {
@@ -345,8 +430,6 @@ of those sections to manage the look and feel of the site. */
         width: 40px;
         height: 40px;
         margin: 3px;
-        background-color: rgb(0, 161, 233);
-        color: #FFF;
         border-radius: 40px;
         padding: 11px;
     }
@@ -354,6 +437,10 @@ of those sections to manage the look and feel of the site. */
     .locations-icon {
         font-size: 2rem;
         line-height: 2rem;
+    }
+
+    .btn-subtitle {
+        font-size: 1rem;
     }
 
     .brands-icon {
@@ -372,11 +459,11 @@ of those sections to manage the look and feel of the site. */
         display: inline;
     }
 
-    .brands-logos .nav-pills {
+    .nav-pills {
         margin-top: 3px;
     }
 
-    .brands-logos .nav > li > a {
+    .nav > li > a {
         padding: 5px;
     }
 
@@ -384,42 +471,65 @@ of those sections to manage the look and feel of the site. */
         margin: 0;
     }
 
-    .melia-logo {
-        background: url(../images/brands/melia-logo-small.png);
-        background-size: cover;
-        width: 74px;
-        height: 39px;
+    .brands-text {
+        width: inherit;
+        float: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
     }
 
-    .me-logo {
-        background: url(../images/brands/me-logo-small.png);
-        background-size: cover;
-        width: 61px;
-        height: 39px;
+    .brands-video {
+        float: none;
     }
 
-    .innside-logo {
-        background: url(../images/brands/innside-logo-small.png);
-        background-size: cover;
-        width: 86px;
-        height: 30px;
+    .locations-section {
+        padding-top: 0;
     }
 
-    .paradisus-logo {
-        background: url(../images/brands/paradisus-logo-small.png);
-        background-size: cover;
-        width: 81px;
-        height: 45px;
+    .locations-title {
+        padding-left: 10px;
+        font-size: 2rem;
     }
 
-    .gran-melia-logo {
-        background: url(../images/brands/gran-melia-logo-small.png);
-        background-size: cover;
-        width: 118px;
-        height: 36px;
+    .locations-desc {
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    .locations-map {
+        float: none;
+        width: 100%;
     }
 
     .locations-regions {
         margin-right: 0;
+        float: none;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .locations-tab {
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    .locations-tab h4 {
+        font-size: 1.5rem;
+    }
+
+    .locations-tab-title {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .footer-section {
+        padding: 40px 10px;
+    }
+
+    .footer-container {
+        font-size: 1rem;
+        padding-left: inherit;
+        padding-right: inherit;
     }
 }
