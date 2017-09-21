@@ -361,8 +361,12 @@ padding of sections and children of those sections to manage the look and feel o
     float: right;
     width: 40%;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 110px;
 
+}
+
+.locations-regions-focus-link:hover {
+    text-decoration: none;
 }
 
 .locations-tab {
