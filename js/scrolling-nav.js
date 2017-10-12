@@ -16,6 +16,12 @@ $(function() {
         }, 800, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    // Scroll to properties list when clicked on a country
+    $('a.country-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top - 10 }, 800, 'easeInOutExpo');
+    });
 });
 
 // Closes the Responsive Menu on Menu Item Click
