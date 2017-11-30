@@ -194,6 +194,10 @@ padding of sections and children of those sections to manage the look and feel o
     text-align: justify;
     padding: 50px;
 }
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
 
 .welcome-video {
     width: 80%;
