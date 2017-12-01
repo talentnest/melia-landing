@@ -295,7 +295,7 @@ padding of sections and children of those sections to manage the look and feel o
     margin-right: auto;
     margin-bottom: 20px;
     position: relative;
-    padding-bottom: 39.3%; /* 16:9 */
+    padding-bottom: 39.35%; /* 16:9 */
 }
 
 .brands-video iframe {
