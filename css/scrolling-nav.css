@@ -60,6 +60,21 @@ html {
     background-color: #E5DCD3;
 }
 
+.language-links {
+    float: right;
+    position: absolute;
+    top: 3px;
+    margin-right: 20px;
+    margin-left: 30px;
+    z-index: 9999;
+}
+
+.language-links a {
+    background-color: #F7FCFF;
+    padding: 3px;
+    color: #8B664C;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 10px 0;
@@ -189,14 +204,29 @@ padding of sections and children of those sections to manage the look and feel o
 }
 
 .footer-section {
-    background-color: #5c4433;
-    color: #E5DCD3;
-    text-align: justify;
-    padding: 50px;
-}
-.social-media {
-    margin-top: 20px;
+    background-color: #E5DCD3;
+    color: #5C4433;
     text-align: center;
+    padding: 25px;
+}
+
+.footer-image {
+    width: 100%;
+}
+
+.footer-rights {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.social-media {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-media-image {
+    margin-left: 5px;
 }
 
 .welcome-video {
@@ -309,7 +339,7 @@ padding of sections and children of those sections to manage the look and feel o
 .brands-title {
     line-height: 4.8rem;
     padding: 0 15px;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .brand-logo {
@@ -441,6 +471,14 @@ padding of sections and children of those sections to manage the look and feel o
         padding-top: 90px;
     }
 
+    .language-links {
+        right: 15px;
+        bottom: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        top: 27px;
+    }
+
     .transparent-container {
         padding: 15px;
     }
@@ -557,7 +595,7 @@ padding of sections and children of those sections to manage the look and feel o
     }
 
     .footer-section {
-        padding: 40px 10px;
+        padding: 20px 10px;
     }
 
     .footer-container {

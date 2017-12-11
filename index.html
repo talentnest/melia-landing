@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Meliá The Americas Region</title>
+    <title data-l10n-id="page-title">Meliá The Americas Region</title>
+
+    <!--- Localization --->
+    <link rel="prefetch" type="application/l10n" href="l10n.ini" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,21 +50,25 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from welcome link when scrolled up past welcome section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#welcome">The Americas Region</a>
+                        <a class="page-scroll" href="#welcome" data-l10n-id="navbar-welcome">The Americas Region</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#brands">Our Brands</a>
+                        <a class="page-scroll" href="#brands" data-l10n-id="navbar-brands">Our Brands</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#locations">Our Destinations</a>
+                        <a class="page-scroll" href="#locations" data-l10n-id="navbar-locations">Our Destinations</a>
                     </li>
                 </ul>
+                <span class="language-links">
+                    <a href="#" onclick="document.webL10n.setLanguage('es'); return false;">Esp</a>
+                    <a href="#" onclick="document.webL10n.setLanguage('en'); return false;">Eng</a>
+                </span>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -83,8 +90,8 @@
                         <a class="btn btn-default page-scroll btn-block section-btn" href="#brands">
                             <span class="brands-icon circle">Ã</span>
                             <span class="section-btn-label">
-                                <div class="btn-title">OUR BRANDS</div>
-                                <div class="btn-subtitle">Learn more about  each of our brands</div>
+                                <div class="btn-title" data-l10n-id="btn-brands">OUR BRANDS</div>
+                                <div class="btn-subtitle" data-l10n-id="btn-brands-desc">Learn more about each of our brands</div>
                             </span>
                         </a>
                     </div>
@@ -92,8 +99,8 @@
                         <a class="btn btn-default page-scroll btn-block section-btn" href="#locations">
                             <span class="glyphicon glyphicon-globe locations-icon circle"></span>
                             <span class="section-btn-label">
-                                <div class="btn-title">OUR DESTINATIONS</div>
-                                <div class="btn-subtitle">Find your  preferred location</div>
+                                <div class="btn-title" data-l10n-id="btn-destinations">OUR DESTINATIONS</div>
+                                <div class="btn-subtitle" data-l10n-id="btn-destinations-desc">Find your preferred location</div>
                             </span>
                         </a>
                     </div>
@@ -108,7 +115,7 @@
             <ul class="nav nav-tabs">
                 <li class="active">
                     <a data-toggle="tab" href="#brands-home">
-                        <div class="brands-title">Our Brands</div>
+                        <div class="brands-title" data-l10n-id="brands-title">Our Brands</div>
                     </a>
                 </li>
                 <li class="brand-logo">
@@ -164,14 +171,14 @@
             <div class="tab-content">
                 <div id="brands-home" class="tab-pane fade in active">
                     <div class="brands-text">
-                        <h4>Sol Group Corp</h4>
-                        <p>
+                        <h4 data-l10n-id="brands-sgc-title">Sol Group Corp</h4>
+                        <p data-l10n-id="brands-sgc-desc1">
                             The Sol Group Corporation (TSGC) is a corporation with its principal place of business in
                             Miami. TSGC provides services to companies associated with hotels located in the Americas
                             Region affiliated with the Meliá Hotels International brands.
                         </p>
-                        <p>
-                            If you wish to apply for a position in our corporate offices, please <a href="https://corporateregionalamerica.talentnest.com" target="_blank" rel="noopener noreferrer">click here</a>.
+                        <p data-l10n-id="brands-sgc-desc2">
+                            If you wish to apply for a position in our corporate offices, please <a href="https://corporateregionalamerica.talentnest.com" target="_blank" rel="noopener noreferrer" data-l10n-id="brands-sol-desc3">click here</a>.
                         </p>
                     </div>
                     <div class="brands-video">
@@ -186,7 +193,7 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Circle by Melia" src="images/brands/circle_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-circle-desc">
                             Circle by Meliá is a vacation club designed by Meliá Hotels International to provide its
                             members a wide selection of holidays in the most exotic and stunning destinations in the
                             world, year after year. Members have access to first class service and accommodation
@@ -205,26 +212,18 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Gran Meliá Hotels & Resorts" src="images/brands/gran_melia_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-gran-desc1">
                             Traditional luxury with avant-garde style.
                         </p>
-                        <p>
+                        <p data-l10n-id="brands-gran-desc2">
                             Gran Meliá has designed an exclusive series of
                             hotels and resorts to satisfy even the most demanding travellers.
                         </p>
-                        <p>
+                        <p data-l10n-id="brands-gran-desc3">
                             Gran Meliá Hotels & Resorts are the finest hotels within the Meliá Hotels International
                             portfolio and a definitive statement of contemporary luxury. Their style, design and
                             location make them the preferred hotels of the most discerning guests.
                         </p>
-                        <ul class="brands-link-list">
-                            <li>
-                                <a href="https://meliacartagena.talentnest.com/en/jobs" target="_blank" rel="noopener noreferrer">Meliá Cartagena De Indias</a>
-                            </li>
-                            <li>
-                                <a href="https://meliapvr.talentnest.com/en/jobs" target="_blank" rel="noopener noreferrer">Meliá Puerto Vallarta</a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="brands-video">
                         <iframe width="560" height="349"
@@ -238,7 +237,7 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Meliá Hotels & Resorts" src="images/brands/melia_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-mhr-desc">
                             With over 90 hotels located in major cities and tourist destinations in the world,
                             Meliá Hotels & Resorts stands out for its perfect combination of design and functionality
                             and privileged location in the top tourist and business destinations. With hotels in
@@ -247,7 +246,10 @@
                         </p>
                         <ul class="brands-link-list">
                             <li>
-                                <a href="https://clubmeliadominicana.talentnest.com/en/jobs" target="_blank" rel="noopener noreferrer">Club Meliá Tropicana</a>
+                                <a href="https://meliacartagena.talentnest.com/en/jobs" target="_blank" rel="noopener noreferrer">Meliá Cartagena De Indias</a>
+                            </li>
+                            <li>
+                                <a href="https://meliapvr.talentnest.com/en/jobs" target="_blank" rel="noopener noreferrer">Meliá Puerto Vallarta</a>
                             </li>
                         </ul>
                     </div>
@@ -263,7 +265,7 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="ME by Meliã" src="images/brands/me_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-me-desc">
                             ME by Meliá hotels are meticulously designed to meet the demands of the most contemporary
                             guests: people who see travel not just as a journey but as an extension of their lifestyle.
                             Enjoy life, travel, work and business as part of the same journey.
@@ -291,10 +293,10 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Innside by Meliá" src="images/brands/innside_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-innside-desc1">
                             Urban lifestyle hotels for business and leisure.
                         </p>
-                        <p>
+                        <p data-l10n-id="brands-innside-desc2">
                             Innside Hotels are four and five-star hotels located in major cities. These stunning hotels
                             have their own character, unique architecture and an avant-garde design, offering customers
                             a one-of-a-kind experience.
@@ -317,7 +319,7 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Paradisus by Meliã" src="images/brands/paradisus_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-paradisus-desc">
                             The most luxurious all-inclusive resort experience in the world, which includes signature
                             cooking by famous international chefs, spectacular YHI Spas and a unique, personalized
                             service to make your dreams come true.
@@ -352,11 +354,11 @@
                         <div class="brands-text-logo">
                             <img class="logo-color" alt="Sol by Meliá" src="images/brands/sol_logo.svg">
                         </div>
-                        <p>
+                        <p data-l10n-id="brands-sol-desc1">
                             Resort hotels where you can enjoy fun holidays in top tourist destinations like
                             the Mediterranean and the Canary Islands.
                         </p>
-                        <p>
+                        <p  data-l10n-id="brands-sol-desc2">
                             Sol by Meliá are resort hotels for everyone, including couples, families, friends and
                             children. They are always located in a simple, functional environment where you can make
                             the most of important moments without compromising on comfort.
@@ -376,9 +378,9 @@
     <!-- Locations Section -->
     <section id="locations" class="locations-section">
         <div class="container locations-container">
-            <h1 class="locations-title">Our Destinations</h1>
+            <h1 class="locations-title" data-l10n-id="locations-title">Our Destinations</h1>
             <div class="locations-desc">
-                <p>Select your preferred location</p>
+                <p data-l10n-id="locations-desc">Select your preferred location</p>
             </div>
             <div class="locations-map">
                 <svg id="svg-americas" class="svg-americas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350">
@@ -442,7 +444,7 @@
                         <g id="pin-group-usa" class="pin-group pin-group-usa">
                             <path id="US" class="country" stroke="#FFF" stroke-width=".5" d="M159.8 9.95c-.58-.56-.93-1.3-1.73-1-1.4.5-1.33.57-2.32-.58-1.5 2.17-2.28 3.62-2.97 6.15-.32 1.18-1 1.92-2.03 2.45-.42.2-1.02.07-1.16.55-.3.73-.1.72-.9.72-2.6 0-5.2 0-7.7.03-1.2 0-5.8 2.5-5.1 3.73 1.5 2.77-2.2 3-4 2.75-1.3-.17-2.3-.18-3.5.2-.1.03 0 1.7-.6 2.2-1.9 1.73-3.7 2.26-5.8 3.54-2.3 1.4-4 1.3-6.4.3.8-1.3 3-4 2.9-5.5-.1-1.1-.4-2.1-.6-3.2-.4-1.5-2.2.5-2.5.8-.9.9-1.3-.4-.7-1.1 1-1 1.4-1.5 1.4-3 0-2.7-2.5-3.4-4.7-4.2-.4 1.5-1.1 2.3-1.5 3.8l-.3-1.3c-1.9 1.5-3.3 4.3-2.3 6.7.7 1.9.9 6.7-2.3 6.7-1.2 0-1.7-1.3-1.8-2.5-.1-1-.5-2.8-.3-3.7.7-2.8 1.3-5.2 2.6-7.8-1.1.1-1.9 1.7-2.5 2.5-.7-.7.9-2.2 1.4-3 1-1.5 1.1-1.3 2.9-1.8 1.5-.4 2-.8 3.5-.6 1.2.2 2.2 0 3.4-.2-1-1.2-1.3-1.6-2.8-1.9-.6-.1-.4-1-.8-1.1-.5-.2-1.8.2-2.3.3-.7.1-2.6 1.2-3.1.9-1.2-1-2-1.5-3.5-2l.9-2.2c-1.7.9-3.4 2-5.2 2.9-1.7.8-1.6.9-3-.2-.9-.7-2.3.2-3.3.5-.2-2.2 5.2-4.6 6.7-5.4-1.1-.4-2.7-1.3-3.9-1-2 .5-2.6.1-4.4-.8-1.2-.6-2.7-.7-4-.9-1.8-.2-1.8-1.3-2.2-3-.1-.5-1-.1-1 .4 0 .8.2 1-.6 1H5.5C6.1 3.3 7.73 7 6.2 9c-.4-1-.74-3.15-1.5-3.9-.4-.2-4-1.3-4.14-1-.45 1.1.6 2.6.88 3.8.4 1.6.67 3.04.8 4.7.3 3.2 0 6.17-.3 9.35-.14 1.4-.67 2.7-1.07 4-.3 1.1.8 2.5.9 3.6.04 1.7.04 3-.28 4.6-.4 1.9 1 2.07 1.3 3.76.2 2.1.5 2.8 1.7 4.5.4.5.7 1 1.2 1.4.9.8.3.8.7 1.6 1.5 3.1 2.8 5.5 5 8.2.7 1-.2 2.4 1.5 2.6.6.1 1.6 0 2.2.3 1 .5.9.9 2 1 1 .1.2.6.8 1 .4.3 1 .1 1.4.5.9 1 1.6 1.6 2 2.9.3 1.2 5.7.1 6.9 0l-.3.6c2.4.9 4.7 1.8 7.1 2.6 1 .3 2.5 1.2 3.5 1.2H44c1.53 0 2.5.6 2.5-1.1 0-.4 3.7-.2 4.3-.2.97 0 1.7 1.2 2.5 1.8 1.2.9 2.1 1.7 2.84 3.1.65 1.2.72 2.1 1.9 2.9.66.4 2.6 1.7 3.05 1 1-1.5 1.1-2.2 2.9-2.3 1.2 0 2.5.7 3.2 1.7.7 1.2 1.3 2.5 2.1 3.6 1 1.5 1.6 1.8 2.1 3.6.6 2.1 3.9 4 6.2 3.4-1.4-2-.9-5.3.8-6.9 1-1 2.3-1.3 3.5-2.1 1-.7 1.7-2.1 3-2.5.9-.3 2.8-1.1 3.8-.8.5.2 1.4.8 2 .7.6-.1 1.7-.5 2.3-.4.5.1 1.3 1.1 1.7 1.4.5.5 1.2.4 1.8.4.7.1.9-.5 1.6-.6.7-.1.8.9 1.5.1-1.1-.6-.3-1.9-1.1-2.8 1.1-.6 2.5-.8 3.8-.6 1.8.3 3.2.1 5-.1 1.2-.2 2.4 1.4 3.1 2.2.9 1.1 2.6-1.6 3.6-1.1 1.3.7 2.1 1.9 3 3.1 1.3 1.6.2 2.2.3 3.9.1 1.2 1.2 2.6 1.7 3.6l1.1 2c.4.7 1 .8 1.5 1.4.6.8 0 1.27 1.1 1.5.4.1 1.3.3 1.6-.3.6-1.6.7-2.9.8-4.6.1-2.6-1.8-5.6-2.6-8-1-2.9-2.1-5.5-.2-8.3.7-1.05 1.6-2 2.6-2.7l2.2-1.6c.5-.4.3-1.1.8-1.4.9-.8 1.2-1.2 2.5-1.37.8-.1 1.3-1.53 2-2 .7-.5 1.9-.7 2.8-1 .6-.2 1.4-1.9 1.8-2.46.5-.8-.3-4.67-1.2-4.9-.6-.2-.3-2.5-.3-3-.1-.8-1.3-1.2-2-1.6l1.9.6c-.4-1.66-.6-2.2-.1-3.8.2 1.4 0 2.6 1 3.6 1.3 1.2-.7 2.14.1 3.2.7-1.4 1.5-2.74 2.4-4.06.6-.94-1-3.1-1.3-4.1.6.8 1.8.9 1.7 2 1.4-1.92 2.1-3.04 2.6-5.4-.3 0-.6-.15-.9-.14.3-.4.6-.8.9-1l-.1.4c2.1 0 3.8-.5 5.7-1.1-1-1.4-3.6-.2-5 0 2.1-1 4.1-1.1 6.3-1.8.9-.3 6.9-.7 3.6-2.7l.3 1.3c-2.5.5-2.4-3.8-1.6-5.1.7-1 1.1-2 2.2-2.4 1.3-.5 2.6-1 3.9-1.6 1.1-.5 2.1-1.1 3.2-1.8s1.2-1.14.3-2.3c-.9-1.03-1.6-1.53-1.6-2.9V9.2z"/>
                             <path class="pin usa" d="M95.33 49.64c-.1.87.5 1.66 1.36 1.78v3l.2.75.2-.76v-2.9c.8-.1 1.4-.7 1.3-1.5 0-.9-.7-1.6-1.6-1.6-.8 0-1.5.6-1.6 1.4z"/>
-                            <text class="pin-text usa" transform="translate(88.29 45.992)">
+                            <text class="pin-text usa" transform="translate(88.29 45.992)" data-l10n-id="usa">
                                 U.S.A
                             </text>
                         </g>
@@ -463,7 +465,7 @@
                         <g id="pin-group-mexico" class="pin-group pin-group-mexico">
                             <path id="MX" class="country" stroke="#FFF" stroke-width=".5" d="M77.52 84.44c-1.15 2.85-1.6 5.18-1.75 8.25-.06 1.2-.35 2 0 3.2.42 1.3 1.15 2.4 1.5 3.9.3 1.1 1.62 1.7 2.04 2.8.6 1.3 1 2.8 2.5 3.1l2.1.5c.6.1.8 1.1 1.3 1.2.7.1 3.5-1 4.5-1.1 2.6-.4 5.9-1.2 6.5-4 .2-.9-.1-3 .9-3.4 1.5-.7 2.8-1 4.4-1.4 1.1-.3 2.3.1 3.5-.1 1.5-.3 2.6.8 1.4 2.2-.5.6-2.4 2.6-1.6 3.5.5.5-.6 3.1-.9 3.8-1-2-2.2.1-2.8 1.1-.5-.4-.8-.4-.8.2h-4.4c-1.8 0 .3 2.1-2.1 1.7.9.7 1.9 1.3 2.4 2.2.8 1.2.2 1.1-1.4 1.1-1.9 0-1.8 0-2.7 1.6-.5 1 .1.6 0 1.3-.1.6-.4.9-.4 1.5-2.5-2.5-5.5-6-9.3-4.1-2.2 1.1-3 .6-5.3 0-2-.5-3.7-1.7-5.7-2.1-1.7-.3-3.4-1.3-4.9-2.2-.4-.2-1.7-1.5-2-1.5-.9-.1-1.7-.2-2.6-.5-1.9-.7-3-2-4.8-3-1.6-.9-2.4-2.3-3.1-3.9.3 0 .6-.3 1-.3-.6-.9.4-1.4.4-2.4 0-.8-.9-1.8-1.1-2.6-.3-1.5-2.4-3.9-3.5-4.8-.9-.8-1.9-1.5-2.7-2.3-.6-.7-.9-1.7-1.7-2.2-.8-.4-2.3-.8-2.5-1.8-.4-1.4 1.2-1.5-.5-2.4-.7-.4-1.7-1.1-2.1-1.8-.5-.8-.1-2.1-1.2-2.3-1.6-.3-3.8-2.5-4-4.1-.2-1.9-2.6-3.3-2.5-5.4.1-2.3-2.9-2.2-4.5-3.1-.6 2 0 4.9 1.2 6.5.3.5 3.6 4.4 3.7 4.4.2 0 1 2.2 1.5 2.7.8.7 1.3 1.7 2.2 2.5.8.7.9 2.1 1.2 3.1.3.9 1.1 1.9 1.6 2.8.2.4.2 1.1.2 1.6.1.4 1 .1 1.4.3.4.1 2.2 2.3 2.2 2.7 0 .6-1.5 2.2-1.8 1.5-.6-1.5-1-2.1-2.2-3.1-.7-.7-1.6-1.5-2.5-1.9-1.5-.9-1.2-1.1-1.2-2.9.1-1.4-.6-2-1.6-2.7-.6-.5-1.8-2-2.4-1.1-.6-1.1-1.6-1-2.4-1.6-.3-.2-2.2-2.2-1.3-2.1.9.1 1.9-.1 2-1.3.2-1.7-.6-2-1.8-3.2-.6-.7-1.7-.8-2.1-1.6l-1.6-3.3c-1-2-1.9-4-2.7-6l6.8-.6-.3.6 7 2.8c1 .3 2.5 1.2 3.5 1.2l5.2-.08c1.6 0 2.5.5 2.5-1.2 0-.4 3.7-.2 4.3-.2 1 0 1.7 1.25 2.6 1.8 1.2.9 2.1 1.8 2.88 3.1.67 1.2.7 2.1 1.9 2.85.67.4 2.6 1.7 3.06 1 1-1.5 1.1-2.2 2.9-2.2 1.2 0 2.5.66 3.1 1.7.7 1.1 1.3 2.5 2.1 3.6 1 1.4 1.6 1.8 2.1 3.56.6 2.2 3.9 4 6.2 3.4z"/>
                             <path class="pin mexico" d="M65.57 95.58c-.1.86.5 1.65 1.36 1.77v3l.2.75.2-.76h.02v-3c.8-.1 1.38-.77 1.37-1.56 0-.88-.7-1.58-1.58-1.58-.8 0-1.47.6-1.57 1.38z"/>
-                            <text class="pin-text mexico" transform="translate(53.334 92.655)">
+                            <text class="pin-text mexico" transform="translate(53.334 92.655)" data-l10n-id="mexico">
                                 Mexico
                             </text>
                         </g>
@@ -477,7 +479,7 @@
                         <g id="pin-group-dominican" class="pin-group pin-group-dominican active-pin">
                             <path id="DO" class="country" stroke="#FFF" stroke-width=".5" d="M148.8 103.06c.7-1.3 3.03-.27 4.04.2.9.4.8-.22 1.34.88.18.37 1.22.12 1.6.1-.1.27.03.62-.08.88 1.2-.04 1.72.48 2.63 1.2-.94 1.08-.84 1.3-2.17.65-.44-.2-2.37-.16-2.66.15-1.02 1.08-1.52-.38-2-.16-1 .47-1.27 1.37-1.8 2.32-1.35-.44-.5-2.1-1.54-2.98 1.3-.52.8-2.2.65-3.24z"/>
                             <path class="pin dominican" d="M150.1 98.43c-.12.86.5 1.66 1.35 1.77v3l.2.75.22-.75v-3c.8-.1 1.38-.77 1.38-1.57 0-.87-.72-1.58-1.6-1.57-.78 0-1.46.58-1.56 1.37z"/>
-                            <text class="pin-text dominican" transform="translate(149.347 96.057)">
+                            <text class="pin-text dominican" transform="translate(149.347 96.057)" data-l10n-id="dominican-republic">
                                 Dominican Republic
                             </text>
                         </g>
@@ -486,7 +488,7 @@
             </div>
             <div id="locations-regions" class="locations-regions">
                 <div id="pin-group-usa-tab" class="locations-tab">
-                    <h3 class="locations-tab-title">U.S.A</h3>
+                    <h3 class="locations-tab-title" data-l10n-id="usa">U.S.A</h3>
                     <h4 class="locations-tab-title">Miami</h4>
                     <ul>
                         <li><a href="https://memiami.talentnest.com" target="_blank" rel="noopener noreferrer">ME Miami</a></li>
@@ -496,13 +498,13 @@
                     <ul>
                         <li><a href="https://meliaorlando.talentnest.com" target="_blank" rel="noopener noreferrer">Meliá Orlando Suite Hotel</a></li>
                     </ul>
-                    <h4 class="locations-tab-title">New York</h4>
+                    <h4 class="locations-tab-title" data-l10n-id="new-york">New York</h4>
                     <ul>
                         <li><a href="https://innsideny.talentnest.com" target="_blank" rel="noopener noreferrer">Innside New York Nomad</a></li>
                     </ul>
                 </div>
                 <div id="pin-group-dominican-tab" class="locations-tab visible-pin-tab" style="display: block;">
-                    <h3 class="locations-tab-title">Dominican Republic</h3>
+                    <h3 class="locations-tab-title" data-l10n-id="dominican-republic">Dominican Republic</h3>
                     <ul>
                         <li><a href="https://meliarepublicadominicana.talentnest.com" target="_blank" rel="noopener noreferrer">Meliá Caribe Tropical</a></li>
                         <li><a href="https://meliarepublicadominicana.talentnest.com" target="_blank" rel="noopener noreferrer">Paradisus Palma Real</a></li>
@@ -524,7 +526,7 @@
                     </ul>
                 </div>
                 <div id="pin-group-mexico-tab" class="locations-tab">
-                    <h3 class="locations-tab-title">Mexico</h3>
+                    <h3 class="locations-tab-title" data-l10n-id="mexico">Mexico</h3>
                     <h4 class="locations-tab-title">Cancun</h4>
                     <ul>
                         <li><a href="https://clubmeliacancun.talentnest.com" target="_blank" rel="noopener noreferrer">Club Meliá Cancun</a></li>
@@ -549,7 +551,7 @@
                             Meliá Cozumel
                             <br/>
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:formacion.cozumel@melia.com" title="formacion.cozumel@melia.com">(contact the hotel)</a>
+                                <a href="mailto:formacion.cozumel@melia.com" title="formacion.cozumel@melia.com" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                     </ul>
@@ -573,7 +575,7 @@
                             Meliá Lima
                             <br/>
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:Seleccion.melia.lima@melia.com" title="Seleccion.melia.lima@melia.com">(contact the hotel)</a>
+                                <a href="mailto:Seleccion.melia.lima@melia.com" title="Seleccion.melia.lima@melia.com" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                     </ul>
@@ -584,7 +586,7 @@
                         <li>
                             Gran Meliá Caracas
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:captacionrhccs@melia.com" title="captacionrhccs@melia.com">(contact the hotel)</a>
+                                <a href="mailto:captacionrhccs@melia.com" title="captacionrhccs@melia.com" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                     </ul>
@@ -595,19 +597,19 @@
                         <li>
                             Meliá Buenos Aires
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:cv@meliabuenosaires.com.ar" title="cv@meliabuenosaires.com.ar">(contact the hotel)</a>
+                                <a href="mailto:cv@meliabuenosaires.com.ar" title="cv@meliabuenosaires.com.ar" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                         <li>
                             Meliá Iguazú
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:rrhh.melia.iguazu@melia.com" title="rrhh.melia.iguazu@melia.com">(contact the hotel)</a>
+                                <a href="mailto:rrhh.melia.iguazu@melia.com" title="rrhh.melia.iguazu@melia.com" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                         <li>
                             Meliá Recoleta Plaza
                             <div class="locations-tab-contact-link">
-                                <a href="mailto:Hotel@meliarecoletaplaza.com.ar" title="Hotel@meliarecoletaplaza.com.ar">(contact the hotel)</a>
+                                <a href="mailto:Hotel@meliarecoletaplaza.com.ar" title="Hotel@meliarecoletaplaza.com.ar" data-l10n-id="contact-hotel">(contact the hotel)</a>
                             </div>
                         </li>
                     </ul>
@@ -618,21 +620,17 @@
 
     <section id="footer" class="footer-section">
         <div class="container footer-container">
-            The information contained in this communication is confidential, may be privileged and is intended for the
-            exclusive use of the above named addressee. If you receive this communication in error, please notify the
-            sender immediately and delete it, and all its attached documents. If you are not the intended recipient, you
-            are expressly prohibited from reading, copying, distributing, disseminating or, in any other way, using any
-            of the information without the company consent. Please note that Internet e-mail guarantees neither the
-            confidentiality nor the proper receipt of the message sent, so that the Company shall not be liable for any
-            damages caused.
+            <img alt="Footer" class="footer-image" src="images/footer.png">
             <div class="social-media">
-                <a href="https://twitter.com/MHICareers" rel="noopener noreferrer" target="_blank" title="Follow us on Twitter">
-                    <img alt="Twitter" class="social-media-image" height="32" src="https://d4fpme2i4v12t.cloudfront.net/assets/common_assets/melia/images/twitter-5bee2c6bd1d3fa1bea5309f794bcb316.png" width="32">
+                <a href="https://twitter.com/MHICareers" rel="noopener noreferrer" target="_blank" title="Follow us on Twitter" data-l10n-id="social-twitter">
+                    <img alt="Twitter" class="social-media-image" height="32" src="images/twitter.png" width="32">
                 </a>
-                <a href="https://www.linkedin.com/company/melia-hotels-international" rel="noopener noreferrer" target="_blank" title="Follow us on LinkedIn">
-                    <img alt="Linkedin" class="social-media-image" height="32" src="https://d4fpme2i4v12t.cloudfront.net/assets/common_assets/melia/images/linkedin-90ac9b1d28523471b3b181f081d13711.png" width="32">
+                <a href="https://www.linkedin.com/company/melia-hotels-international" rel="noopener noreferrer" target="_blank" title="Follow us on LinkedIn" data-l10n-id="social-linkedin">
+                    <img alt="Linkedin" class="social-media-image" height="32" src="images/linkedin.png" width="32">
                 </a>
             </div>
+            <div class="footer-rights" data-l10n-id="footer-rights">All rights reserved</div>
+
         </div>
     </section>
 
@@ -674,5 +672,7 @@
           }
         }
     </script>
+
+    <script type="text/javascript" src="js/l10n.js"></script>
 </body>
 </html>
