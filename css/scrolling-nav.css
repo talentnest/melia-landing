@@ -497,7 +497,7 @@ padding of sections and children of those sections to manage the look and feel o
 }
 
 .brands-title {
-    line-height: 4.8rem;
+    line-height: 5.4rem;
     padding: 0 15px;
     font-size: 2.7rem;
 }
@@ -507,9 +507,9 @@ padding of sections and children of those sections to manage the look and feel o
 }
 
 .brand-logo img {
-    width: 124px;
+    width: 108px;
     vertical-align: inherit;
-    padding: 0 18px;
+    padding: 0 5px;
 }
 
 .brands-container .nav li a {
@@ -549,10 +549,6 @@ padding of sections and children of those sections to manage the look and feel o
     text-align: left;
     padding: 5px;
     margin-top: 15px;
-}
-
-.brands-link-list {
-    list-style-type: circle;
 }
 
 .locations-section .locations-region {
